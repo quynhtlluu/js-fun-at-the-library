@@ -62,14 +62,30 @@ console.log(isShortStory);
 // Express the following in code: If the variable "pages" is less than 1000 log
 // the statement 'I could read that in a day!', otherwise, log the statement
 // 'Ok, maybe I could read that in a day and a half'
+var pages = 864/4; //Just restating this from the previous exercises. The value should be 216.
 
-
+if (pages < 1000) {
+  console.log(`I could read that in a day!`);
+}
+else {
+  console.log(`Ok, maybe I could read that in a day and a half`);
+}
+//This code should print out 'Ok, maybe I could read that in a day and a half'
 
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite book is [title]!'. Otherwise, log the
 // statement 'I recently read the [title] book'. In either case, the value stored in
 // the "title" variable should be included in the logged statement.
+var title = "Anna Karenina"; //Just restating this from the previous exercises
+var isFavorite = false; //Just restating this from the previous exercises
 
+if (isFavorite === true) {
+  console.log(`My favorite book is ${title}`);
+  }
+else {
+  console.log(`I recently read ${title}`);
+}
+//This code should print out 'I recently read Anna Karenina'
 
 
 //------------------------- Arrays -------------------------//
