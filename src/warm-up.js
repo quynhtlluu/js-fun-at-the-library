@@ -93,18 +93,20 @@ else {
 
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
-
+var books = ["Carrie", "Coraline", "Dracula", "Frankenstein", "Hamlet"];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+console.log(books[2]);
+//This should print out the third element listed in the Array which is "Dracula"
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
-
+var belowTwoHundred = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 // Write the code to access the 5th element of the array, using bracket notation.
-
+console.log(belowTwoHundred[4]);
+//This should print out the fifth element listed in the Array which is 5
 
 //------------------------- Objects -------------------------//
 
