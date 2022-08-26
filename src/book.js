@@ -5,9 +5,22 @@ function createTitle(bookIdea) {
 
 createTitle();
 
+function buildMainCharacter(name, age, pronouns) {
+  var mainCharacter = {};
+
+  mainCharacter.name = name;
+  mainCharacter.age = age;
+  mainCharacter.pronouns = pronouns;
+
+  console.log(mainCharacter);
+  return mainCharacter;
+};
+
+buildMainCharacter();
+
 module.exports = {
   createTitle,
-  // buildMainCharacter,
+  buildMainCharacter,
   // saveReview,
   // calculatePageCount,
   // writeBook,
