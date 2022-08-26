@@ -113,7 +113,13 @@ console.log(belowTwoHundred[4]);
 // Create a new variable "dictionary" and assign to it an object literal with two
 // keys: name, and hasThesaurus. The value for name should the string 'Webster's', and
 // the value for hasThesaurus should be false
-
+var dictionary = {
+  name: "Webster's",
+  hasThesaurus: false,
+}
 
 // Write the code to add the key of pageCount, with the value of 720. Use dot
 // notation to do this. DO NOT modify your code from above.
+dictionary.pageCount = 720;
+ console.log(dictionary);
+ // Using console.log(dictionary); should print out { name: "Webster's", hasThesaurus: false, pagecount: 720 }
