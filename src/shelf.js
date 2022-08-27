@@ -1,6 +1,11 @@
+function shelfBook(book, shelf) {
+  if (shelf.length + 1 <= 3) {
+    return shelf.unshift(book);
+  }
+}
 
 module.exports = {
-  // shelfBook,
+   shelfBook,
   // unshelfBook,
   // listTitles,
   // searchShelf
