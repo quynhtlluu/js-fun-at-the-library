@@ -24,12 +24,18 @@ function listTitles(fantasyShelf) {
   return titlesList;
 }
 
-//  return shelf.splice(book, 1, 0);
-//  return shelf.pop(book);
+function searchShelf(shelfName, bookTitle) {
+  for (var i = 0; i < shelfName.length; i++) {
+    if (shelfName[i].title === bookTitle) {
+      return true;
+    }
+  }
+  return false;
+}
 
 module.exports = {
    shelfBook,
    unshelfBook,
    listTitles,
-  // searchShelf
+   searchShelf
 };
