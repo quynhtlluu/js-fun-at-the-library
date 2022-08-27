@@ -11,12 +11,25 @@ function unshelfBook(bookTitle, sciFiShelf) {
     }
   }
 }
+
+function listTitles(fantasyShelf) {
+  var titlesList = "";
+  for (var i = 0; i < fantasyShelf.length; i++) {
+    if (i === fantasyShelf.length - 1) {
+      titlesList = titlesList + fantasyShelf[i].title
+    } else {
+      titlesList = titlesList + (fantasyShelf[i].title + ", ");
+    }
+  }
+  return titlesList;
+}
+
 //  return shelf.splice(book, 1, 0);
 //  return shelf.pop(book);
 
 module.exports = {
    shelfBook,
    unshelfBook,
-  // listTitles,
+   listTitles,
   // searchShelf
 };
